@@ -5,6 +5,10 @@
     --bs-body-font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: var(--primary-color);
 }
@@ -121,4 +125,39 @@ a:hover {
 
 .hero__content-width {
     max-width: 540px;
+}
+
+.hero__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center
+}
+
+.hero__scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+
+}
+
+.hero__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
 }
