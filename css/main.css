@@ -160,4 +160,36 @@ a:hover {
         transform: translateY(-10px);
     }
 }
+
+/* Steps Section******************* */
+.steps {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+.steps__section-thumbnail {
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+.steps__content-width {
+    max-width: 456px;
+    margin: 0 auto;
+}
+
+@media(min-width:554px) {
+    .steps {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .steps__section-thumbnail {
+        height: auto;
+
+    }
+
 }
